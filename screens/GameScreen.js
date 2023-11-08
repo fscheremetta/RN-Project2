@@ -37,11 +37,6 @@ function GameScreen({ userNumber }) {
     }
     if (direction === "lower") {
       maxBoundary = currentGuess;
-      const newRndNumber = generateRandomBetween(
-        minBoundary,
-        maxBoundary,
-        currentGuess
-      );
     } else {
       minBoundary = currentGuess + 1;
     }
